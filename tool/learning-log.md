@@ -23,6 +23,13 @@
 * I want to experiment more with using actions repeatedly, so i can explore how to apply the same action to a group multiple times without calling it over again and again.
 * Next, I want to try using multiple actions at once. For example, I’d like to make sprites rotate with `Angle()` while also fading them with `SetAlpha()` to see how they interact.
 
+### 11/17/2025:
+* Today I took my [Phaser Actions](https://docs.phaser.io/phaser/concepts/actions) knowledge a bit further by experimenting with combining multiple actions at once. For example, I used `Phaser.Actions.Rotate()` alongside `Phaser.Actions.SetAlpha()`. I saw how each sprite could rotate while at the same time, fading in and out. This opened up a lot of creative possibilities for animating multiple properties of an object at once.
+* I also played around with the SmoothStep() action. This action allows you to interpolate properties better, useful when you want an effect that gradually transitions rather than snapping into place. I applied this to my sprites x position and scaleX values. By gradually moving sprites across the screen while also scaling them.
+* A-Ha Moment: I had a realization when I used `Phaser.Actions.SetScale()` with the direction property. It allowed me to reverse the iteration of the scaling effect on a sprite group. I realized how much control I could get by adjusting the direction parameter, allowing for effects like scaling up in reverse order or making sprites shrink in reverse without having to reorder them manually.
+* Grid Alignment: I worked on was using `Phaser.Actions.GridAlign()` to organize a group of sprites into a grid layout.
+* Scaling Challenge: I also encountered a bit of a challenge when trying to change the scale of my sprites using `Phaser.Actions.SetScale()`. While I understood how it worked for individual objects, it took some trial and error to get it working across a group. I had to make sure that I was applying the right scale to the right elements, but once I got the hang of it, I realized how useful it is for changing the size of all objects in an array without having to loop through each one manually.
+* Next, I'm curious to experiment with Phaser Cameras[(https://docs.phaser.io/phaser/concepts/cameras)].
 
 <!-- 
 * Links you used today (websites, videos, etc)
