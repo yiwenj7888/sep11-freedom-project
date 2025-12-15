@@ -39,6 +39,21 @@
 * Zoom and Scroll Challenge: I ran into a bit of a challenge when working with scrolling and zooming. Adjusting the camera’s `scrollX`, `scrollY`, and zoom values felt straightforward until I started converting between screen coordinates and world coordinates. Using `camera.getWorldPoint()` helped clear this up, but it took some experimenting to understand how zooming affects the worldView rectangle. 
 * Next, I want to learn more about the camera like using `camera.startFollow()`, and experiment with Effects and Rotation part.
 
+### 12/8/2025
+* I continued exploring [Phaser's camera](https://docs.phaser.io/phaser/concepts/cameras), like using different Effects.
+* I followed the docs and tried out the basic effects like `fadeOut()` and `fadeIn()` on the camera. It was pretty cool to see the screen fade in and out during a transition. 
+* I changed things by adjusting the duration of fade effects and adding a callback when the effect finishes using `once()`. This made the fade feel more better in my scene transitions.
+* Tried out `pan()` to move the camera around and used `centerOn()` to center the camera on specific points. 
+* My first challenge was figuring out how to combine multiple effects. I stacked a zoom and a shake effect together and realized that I could tweak the force=true parameter to get things running better without interfering with each other.
+* I was also curious about how to reset effects, so I tested `resetFX()`, which cleared everything and gave me a chance to start fresh.
+* A-Ha Moment: This came when I noticed how changing the `camera.alpha` could affect everything on screen as setting it to a lower value slowly fades out my whole code scene.
+* Experimented with rotating the camera with `setAngle()` and `setRotation()`, which was fun to play with different camera angles. I adjusted the origin to make the rotation pivot from different points and not just the center.
+* I also tinkered more with `scrollX` and `scrollY` to move the camera view. Instead of directly setting these values, I used `centerOn()`.
+* Next, I want to learn more about camera or explore the next selections.
+
+
+
+
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
