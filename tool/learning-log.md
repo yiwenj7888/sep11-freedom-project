@@ -52,6 +52,13 @@
 * Next, I want to learn more about camera or explore the next selections.
 
 
+### 1/9/2026
+* Today I learned about [Phaser's camera](https://docs.phaser.io/phaser/concepts/cameras), mainly how to make the camera follow a game object. I used `camera.startFollow()` and saw how the camera moves to keep the target in the center of the screen. 
+* I tested the `lerpX` and `lerpY` values while the camera followed a sprite. When I used smaller values like 0.1, the camera moved more better instead.
+* A-Ha Moment: I had a realization when I used `camera.setDeadzone()`. I learned that the camera doesn’t have to move all the time. And that the object can move inside the deadzone before the camera starts scrolling.
+* I practiced setting camera bounds with `camera.setBounds()`. This stopped the camera from moving outside the game world and showing empty space.
+* I also tested `camera.stopFollow()` and learned how to stop the camera from following an object when needed.
+* Next, I want to keep experimenting with cameras and learn how to use them with an object movement and designing something.
 
 
 <!-- 
