@@ -60,6 +60,20 @@
 * I also tested `camera.stopFollow()` and learned how to stop the camera from following an object when needed.
 * Next, I want to keep experimenting with cameras and learn how to use them with an object movement and designing something.
 
+### 3/2/2026
+* I started learning about the Phaser Math tools today. I read the documentation and tried some of the basic math functions that Phaser adds on top of normal JavaScript math.
+* First I tried `Phaser.Math.Average()`. I made a small example with an array like `[2, 4, 6, 8]` and checked the result. It returned `5`, which helped me understand how Phaser can quickly find the average of numbers.
+* Then I tested `Phaser.Math.Difference(a, b)`. I changed the numbers many times like `Difference(10, 3)` and `Difference(3, 10)`. I noticed it always gives the positive difference, which is useful if I only care about distance between numbers.
+* I also tried `Phaser.Math.Factorial()` with small numbers like `3`, `4`, and `5`. I saw how the results grow really fast. This helped me remember how factorial math works.
+* I experimented with `Phaser.Math.IsEven()` and `Phaser.Math.IsEvenStrict()`. I passed numbers like `2`, `5`, and even `"4"` as a string. I noticed that the strict version checks the value more carefully.
+* I tried playing with `Phaser.Math.Clamp(value, min, max)`. I made a small example where a number could not go above `100` or below `0`. When I pushed the value higher, Clamp forced it back into the range.
+* I experimented with `Phaser.Math.Wrap()`. I set a value between `0` and `10`. When the value went past `10`, it wrapped back to 0. This made me think about how it could be useful for looping positions in a game world.
+* A-ha moment: I realized that interpolation is really useful for good movement and animations in games because it slowly changes numbers instead of jumping instantly.
+* Next I want to keep on learning about Math.
+
+
+
+
 
 <!-- 
 * Links you used today (websites, videos, etc)
