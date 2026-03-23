@@ -61,7 +61,7 @@
 * Next, I want to keep experimenting with cameras and learn how to use them with an object movement and designing something.
 
 ### 3/2/2026
-* I started learning about the Phaser Math tools today. I read the documentation and tried some of the basic math functions that Phaser adds on top of normal JavaScript math.
+* I started learning about the [Phaser Math functions](https://docs.phaser.io/phaser/concepts/math) today. I read the documentation and tried some of the basic math functions that Phaser adds on top of normal JavaScript math.
 * First I tried `Phaser.Math.Average()`. I made a small example with an array like `[2, 4, 6, 8]` and checked the result. It returned `5`, which helped me understand how Phaser can quickly find the average of numbers.
 * Then I tested `Phaser.Math.Difference(a, b)`. I changed the numbers many times like `Difference(10, 3)` and `Difference(3, 10)`. I noticed it always gives the positive difference, which is useful if I only care about distance between numbers.
 * I also tried `Phaser.Math.Factorial()` with small numbers like `3`, `4`, and `5`. I saw how the results grow really fast. This helped me remember how factorial math works.
@@ -71,6 +71,15 @@
 * A-ha moment: I realized that interpolation is really useful for good movement and animations in games because it slowly changes numbers instead of jumping instantly.
 * Next I want to keep on learning about Math.
 
+
+### 3/16/2026
+* I started learning about more [Phaser Math functions](https://docs.phaser.io/phaser/concepts/math) today, most recently ones related to rounding and distance.
+* First I tried `Phaser.Math.CeilTo()`. I tested it with numbers like `12.34` and different place values. And when I used place `0`, it rounded up to the nearest whole number. Then I tried negative places like `-1` and saw it round up to one decimal place. This helped me understand how the place parameter controls precision.
+* Then I experimented with `Phaser.Math.FloorTo()`. I used similar numbers and noticed it always rounded down instead of up. I compared it with `CeilTo`nusing the same values, and it made it easier to see the difference between rounding up and down.
+* Next I tried `Phaser.Math.RoundAwayFromZero()`. I used both positive and negative numbers like `10.5` and `-5.45`. I noticed positive numbers rounded up and negative numbers rounded further down. This helped me understand how it moves numbers away from zero.
+* I experimented with `Phaser.Math.Snap` functions. First I used `Snap.To()` with a gap of `5`. When I tried values like `12` and `14`, I saw it snaped to the nearest multiple of `5`.
+* A-ha moment: I realized that snapping and distance calculations are really important for positioning and movement systems, like in the grid or tile based games.
+* Next I want to keep learning more Phaser Math functions.
 
 
 
