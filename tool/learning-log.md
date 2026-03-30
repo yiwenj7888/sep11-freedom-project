@@ -82,6 +82,17 @@
 * Next I want to keep learning more Phaser Math functions.
 
 
+### 3/23/2026
+* I started learning more about [Phaser Math functions](https://docs.phaser.io/phaser/concepts/math) today. I read the documentation and tried to understand how angles work.
+* First I tried converting between degrees and radians using `Phaser.Math.DegToRad()` and `Phaser.Math.RadToDeg()`. I used some simple values like `180` degrees and saw it convert to pi in radians. And then I converted it back to degrees and got `180` again. This really helped me understand how Phaser handles angle units.
+* Then I tested finding the angle between two points using `Phaser.Math.Angle.Between()`. I used points like `(0,0)` and `(10,10)` and checked the result. I also tried `Phaser.Math.Angle.BetweenPoints()` with point objects. I noticed both methods give the direction angle between two positions, which is useful for aiming or movement.
+* I experimented with `Phaser.Math.Angle.ShortestBetween()`. I used angles like `170` and `-170`. The result showed the shortest rotation instead of a long way around. I also noticed that positive values mean counter clockwise and negative values mean clockwise rotation.
+* I tried `Phaser.Math.Angle.CounterClockwise()` to see how Phaser converts its default clockwise system. I passed in some angles and saw how the direction changed, helping me understand rotation directions better.
+* A-ha moment: I realized that angles are very important for movement, rotation, and direction in games and that Phaser provides many tools to control them easily.
+* Next I want to keep practicing Phaser Math functions.
+
+
+
 
 
 <!-- 
