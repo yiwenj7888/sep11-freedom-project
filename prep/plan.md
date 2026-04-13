@@ -1,7 +1,7 @@
 # Plan
 
-## Tool: 
-## Product: 
+## Tool: Phaser
+## Product: cooking level game
 
 ---
 
@@ -9,13 +9,66 @@
 
 #### MVP
 
-- [ ] Task (deadline: X)
-  - [ ] Subtask (deadline: X)
+##### Week 1: Scene setup
+- [ ] Create the structure
+- [ ] Set up a main scene 
+  - [ ] Add kitchen background
+  - [ ] Add clickable places:
+    - [ ] Cutting board 
+    - [ ] Stove
+    - [ ] Plate station
+  
+My goal: Clickable kitchen
+
+
+##### Week 2: Ingredient System
+- [ ] Create ingredient data structure
+- [ ] Add ingredient UI panel
+- [ ] Click ingredient → store selected ingredient
+- [ ] Highlight selected ingredient
+
+My goal: You can select and visually track ingredients.
+
+
+##### Week 3: Cooking system
+- [ ] Add ingredient states:
+  - [ ] raw
+  - [ ] chopped
+  - [ ] cooked
+- [ ] Cutting board
+- [ ] Stove
+
+My goal: Ingredients changes correctly.
+
+
+##### Week 4: Recipe + Logic
+- [ ] Create recipe data 
+- [ ] Combine ingredients on plate
+- [ ] Correct combination:
+  - [ ] Correct = dish created
+  - [ ] Incorrect = fail message
+
+My goal: A complete dish can be created.
+
+
+##### week 5: UI + Screens
+- [ ] Start screen
+- [ ] Timer display
+- [ ] Feedback messages (Ex: Correct! Burned! and etc.)
+- [ ] Sound effects
+
+My goal: The game is playable.
+
 
 #### Beyond MVP
 
-- [ ] Task
-  - [ ] Subtask
+##### Game Loop
+- [ ] Add countdown timer
+- [ ] Add scoring system
+  - [ ] Increase score on correct dish
+- [ ]  Add win and lose condition
+  
+
 
 
 <!-- EXAMPLE

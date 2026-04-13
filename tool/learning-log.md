@@ -52,6 +52,47 @@
 * Next, I want to learn more about camera or explore the next selections.
 
 
+### 1/9/2026
+* Today I learned about [Phaser's camera](https://docs.phaser.io/phaser/concepts/cameras), mainly how to make the camera follow a game object. I used `camera.startFollow()` and saw how the camera moves to keep the target in the center of the screen. 
+* I tested the `lerpX` and `lerpY` values while the camera followed a sprite. When I used smaller values like 0.1, the camera moved more better instead.
+* A-Ha Moment: I had a realization when I used `camera.setDeadzone()`. I learned that the camera doesn’t have to move all the time. And that the object can move inside the deadzone before the camera starts scrolling.
+* I practiced setting camera bounds with `camera.setBounds()`. This stopped the camera from moving outside the game world and showing empty space.
+* I also tested `camera.stopFollow()` and learned how to stop the camera from following an object when needed.
+* Next, I want to keep experimenting with cameras and learn how to use them with an object movement and designing something.
+
+### 3/2/2026
+* I started learning about the [Phaser Math functions](https://docs.phaser.io/phaser/concepts/math) today. I read the documentation and tried some of the basic math functions that Phaser adds on top of normal JavaScript math.
+* First I tried `Phaser.Math.Average()`. I made a small example with an array like `[2, 4, 6, 8]` and checked the result. It returned `5`, which helped me understand how Phaser can quickly find the average of numbers.
+* Then I tested `Phaser.Math.Difference(a, b)`. I changed the numbers many times like `Difference(10, 3)` and `Difference(3, 10)`. I noticed it always gives the positive difference, which is useful if I only care about distance between numbers.
+* I also tried `Phaser.Math.Factorial()` with small numbers like `3`, `4`, and `5`. I saw how the results grow really fast. This helped me remember how factorial math works.
+* I experimented with `Phaser.Math.IsEven()` and `Phaser.Math.IsEvenStrict()`. I passed numbers like `2`, `5`, and even `"4"` as a string. I noticed that the strict version checks the value more carefully.
+* I tried playing with `Phaser.Math.Clamp(value, min, max)`. I made a small example where a number could not go above `100` or below `0`. When I pushed the value higher, Clamp forced it back into the range.
+* I experimented with `Phaser.Math.Wrap()`. I set a value between `0` and `10`. When the value went past `10`, it wrapped back to 0. This made me think about how it could be useful for looping positions in a game world.
+* A-ha moment: I realized that interpolation is really useful for good movement and animations in games because it slowly changes numbers instead of jumping instantly.
+* Next I want to keep on learning about Math.
+
+
+### 3/16/2026
+* I started learning about more [Phaser Math functions](https://docs.phaser.io/phaser/concepts/math) today, most recently ones related to rounding and distance.
+* First I tried `Phaser.Math.CeilTo()`. I tested it with numbers like `12.34` and different place values. And when I used place `0`, it rounded up to the nearest whole number. Then I tried negative places like `-1` and saw it round up to one decimal place. This helped me understand how the place parameter controls precision.
+* Then I experimented with `Phaser.Math.FloorTo()`. I used similar numbers and noticed it always rounded down instead of up. I compared it with `CeilTo`nusing the same values, and it made it easier to see the difference between rounding up and down.
+* Next I tried `Phaser.Math.RoundAwayFromZero()`. I used both positive and negative numbers like `10.5` and `-5.45`. I noticed positive numbers rounded up and negative numbers rounded further down. This helped me understand how it moves numbers away from zero.
+* I experimented with `Phaser.Math.Snap` functions. First I used `Snap.To()` with a gap of `5`. When I tried values like `12` and `14`, I saw it snaped to the nearest multiple of `5`.
+* A-ha moment: I realized that snapping and distance calculations are really important for positioning and movement systems, like in the grid or tile based games.
+* Next I want to keep learning more Phaser Math functions.
+
+
+### 3/23/2026
+* I started learning more about [Phaser Math functions](https://docs.phaser.io/phaser/concepts/math) today. I read the documentation and tried to understand how angles work.
+* First I tried converting between degrees and radians using `Phaser.Math.DegToRad()` and `Phaser.Math.RadToDeg()`. I used some simple values like `180` degrees and saw it convert to pi in radians. And then I converted it back to degrees and got `180` again. This really helped me understand how Phaser handles angle units.
+* Then I tested finding the angle between two points using `Phaser.Math.Angle.Between()`. I used points like `(0,0)` and `(10,10)` and checked the result. I also tried `Phaser.Math.Angle.BetweenPoints()` with point objects. I noticed both methods give the direction angle between two positions, which is useful for aiming or movement.
+* I experimented with `Phaser.Math.Angle.ShortestBetween()`. I used angles like `170` and `-170`. The result showed the shortest rotation instead of a long way around. I also noticed that positive values mean counter clockwise and negative values mean clockwise rotation.
+* I tried `Phaser.Math.Angle.CounterClockwise()` to see how Phaser converts its default clockwise system. I passed in some angles and saw how the direction changed, helping me understand rotation directions better.
+* A-ha moment: I realized that angles are very important for movement, rotation, and direction in games and that Phaser provides many tools to control them easily.
+* Next I want to keep practicing Phaser Math functions.
+
+
+
 
 ### 3/16/2026
 * Today, I started learning about Phaser textures, which helped me
