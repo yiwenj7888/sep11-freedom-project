@@ -36,14 +36,14 @@
 * I experimented with accessing the main camera using `this.cameras.main` and then moved on to adding additional cameras using `this.cameras.add()`. It gave me a better sense of how you can adjust the rendering system to be.
 * A-Ha Moment: One realization came when I started adjusting the camera viewport. I didn’t fully understand the difference between the viewport and the world view until I manually set the camera viewport to a smaller rectangle as the camera wasn’t just changing what it saw but where on the canvas it rendered that view. That helped me understand why Phaser separates what the camera sees from where the camera displays it.
 * Camera Bounds: I also played around with camera bounds. By giving the camera a rectangular limit, I could stop it from scrolling outside the actual game world. Before setting bounds, the camera could scroll into empty space, so seeing how bounds keep everything contained made a lot of sense.
-* Zoom and Scroll Challenge: I ran into a bit of a challenge when working with scrolling and zooming. Adjusting the camera’s `scrollX`, `scrollY`, and zoom values felt straightforward until I started converting between screen coordinates and world coordinates. Using `camera.getWorldPoint()` helped clear this up, but it took some experimenting to understand how zooming affects the worldView rectangle. 
+* Zoom and Scroll Challenge: I ran into a bit of a challenge when working with scrolling and zooming. Adjusting the camera’s `scrollX`, `scrollY`, and zoom values felt straightforward until I started converting between screen coordinates and world coordinates. Using `camera.getWorldPoint()` helped clear this up, but it took some experimenting to understand how zooming affects the worldView rectangle.
 * Next, I want to learn more about the camera like using `camera.startFollow()`, and experiment with Effects and Rotation part.
 
 ### 12/8/2025
 * I continued exploring [Phaser's camera](https://docs.phaser.io/phaser/concepts/cameras), like using different Effects.
-* I followed the docs and tried out the basic effects like `fadeOut()` and `fadeIn()` on the camera. It was pretty cool to see the screen fade in and out during a transition. 
+* I followed the docs and tried out the basic effects like `fadeOut()` and `fadeIn()` on the camera. It was pretty cool to see the screen fade in and out during a transition.
 * I changed things by adjusting the duration of fade effects and adding a callback when the effect finishes using `once()`. This made the fade feel more better in my scene transitions.
-* Tried out `pan()` to move the camera around and used `centerOn()` to center the camera on specific points. 
+* Tried out `pan()` to move the camera around and used `centerOn()` to center the camera on specific points.
 * My first challenge was figuring out how to combine multiple effects. I stacked a zoom and a shake effect together and realized that I could tweak the force=true parameter to get things running better without interfering with each other.
 * I was also curious about how to reset effects, so I tested `resetFX()`, which cleared everything and gave me a chance to start fresh.
 * A-Ha Moment: This came when I noticed how changing the `camera.alpha` could affect everything on screen as setting it to a lower value slowly fades out my whole code scene.
@@ -53,8 +53,17 @@
 
 
 
+### 3/16/2026
+* Today, I started learning about Phaser textures, which helped me
+* I experiment
+* `this.textures.on`("removetexture-" + key, function () {});
 
-<!-- 
+
+
+
+
+
+<!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
 * Challenges, a-ha moments, etc
